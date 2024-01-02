@@ -1,5 +1,6 @@
 allow_embedding: false
 package_name: tommymagicmirror
+startup: null
 name: Magic Mirror
 startup_form: Form1
 runtime_options:
