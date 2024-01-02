@@ -4,9 +4,15 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {}
-  name: content_panel
+  properties: {visible: true}
+  name: MagicMirrorON
   layout_properties: {slot: default}
+  components:
+  - name: button_1
+    properties: {text: Magic Mirror Power}
+    type: Button
+    layout_properties: {grid_position: 'DGIZRR,SFTABQ'}
+    event_bindings: {click: button_1_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
